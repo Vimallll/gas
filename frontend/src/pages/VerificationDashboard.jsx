@@ -124,8 +124,8 @@ const VerificationDashboard = () => {
 
                     const getDocumentUrl = (docPath) => {
                       if (docPath.startsWith('http')) return docPath;
-                      if (docPath.startsWith('/uploads')) return `http://localhost:5000${docPath}`;
-                      return `http://localhost:5000/uploads/${docPath}`;
+                      if (docPath.startsWith('/uploads')) return `https://gas-backend-d91w.onrender.com${docPath}`;
+                      return `https://gas-backend-d91w.onrender.com/uploads/${docPath}`;
                     };
 
                     return (

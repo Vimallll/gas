@@ -21,7 +21,7 @@ You should see:
 MongoDB connected
 Default configurations initialized
 Server listening on port 5000
-API available at http://localhost:5000
+API available at https://gas-backend-d91w.onrender.com
 ```
 
 ### Step 2: Check MongoDB Connection
@@ -34,7 +34,7 @@ Make sure MongoDB is running:
 
 Test the API directly:
 1. Open browser or use Postman
-2. Go to: `http://localhost:5000/api/auth/login`
+2. Go to: `https://gas-backend-d91w.onrender.com/api/auth/login`
 3. Method: POST
 4. Body (JSON):
    ```json

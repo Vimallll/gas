@@ -32,7 +32,7 @@ You're getting a 404 error because the backend server was started **before** we 
      MongoDB connected
      Default configurations initialized
      Server listening on port 5000
-     API available at http://localhost:5000
+     API available at https://gas-backend-d91w.onrender.com
      ```
 
 5. **Try login again**
@@ -76,7 +76,7 @@ The login should work now!
 If you still get 404 after restarting:
 
 1. Check browser console (F12) - what's the exact URL it's trying?
-2. Verify backend is running: Open `http://localhost:5000` in browser - should show `{"message":"API is running"}`
+2. Verify backend is running: Open `https://gas-backend-d91w.onrender.com` in browser - should show `{"message":"API is running"}`
 3. Check the route exists: The file `backend/routes/auth.js` should have `router.post('/login', ...)`
-4. Make sure you're using the correct URL: `http://localhost:5000/api/auth/login`
+4. Make sure you're using the correct URL: `https://gas-backend-d91w.onrender.com/api/auth/login`
 

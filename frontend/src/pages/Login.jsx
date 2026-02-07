@@ -54,7 +54,7 @@ const Login = () => {
       // Check if it's a network error
       if (!err.response) {
         setError(
-          'Cannot connect to server. Make sure backend is running on http://localhost:5000'
+          'Cannot connect to server. Make sure backend is running on https://gas-backend-d91w.onrender.com'
         );
       }
     } finally {

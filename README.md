@@ -127,7 +127,7 @@ npm start
 npm run dev
 ```
 
-The backend will run on `http://localhost:5000`
+The backend will run on `https://gas-backend-d91w.onrender.com`
 
 ### Frontend Setup
 
@@ -143,7 +143,7 @@ npm install
 
 3. Create `.env` file in frontend directory (optional):
 ```env
-VITE_API_URL=http://localhost:5000/api
+VITE_API_URL=https://gas-backend-d91w.onrender.com/api
 ```
 
 4. Start the development server:
