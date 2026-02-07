@@ -1,0 +1,119 @@
+.application-status {
+  background: white;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.status-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  border-bottom: 2px solid #e2e8f0;
+}
+
+.status-header h2 {
+  margin: 0;
+  color: #2d3748;
+}
+
+.status-badge {
+  padding: 8px 16px;
+  border-radius: 20px;
+  color: white;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.score-section {
+  background: #f7fafc;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.score-section h3 {
+  margin: 0 0 15px 0;
+  color: #2d3748;
+}
+
+.score-breakdown {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 10px;
+  font-size: 14px;
+  color: #4a5568;
+}
+
+.approved-section,
+.rejected-section {
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.approved-section {
+  background: #c6f6d5;
+}
+
+.rejected-section {
+  background: #fed7d7;
+}
+
+.success-message {
+  color: #22543d;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.error-message {
+  color: #742a2a;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.application-details {
+  margin-top: 30px;
+}
+
+.application-details h3 {
+  margin-bottom: 15px;
+  color: #2d3748;
+}
+
+.details-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+}
+
+.details-grid div {
+  padding: 10px;
+  background: #f7fafc;
+  border-radius: 6px;
+}
+
+.details-grid strong {
+  color: #4a5568;
+  margin-right: 8px;
+}
+
+.btn-primary {
+  padding: 10px 20px;
+  background: #667eea;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.btn-primary:hover {
+  background: #5568d3;
+}
+
+
+

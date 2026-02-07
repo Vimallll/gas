@@ -1,0 +1,311 @@
+.admin-dashboard {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 30px 20px;
+}
+
+.tabs {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 30px;
+  border-bottom: 2px solid #e2e8f0;
+}
+
+.tabs button {
+  padding: 12px 24px;
+  background: none;
+  border: none;
+  border-bottom: 3px solid transparent;
+  font-size: 16px;
+  font-weight: 600;
+  color: #718096;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.tabs button:hover {
+  color: #667eea;
+}
+
+.tabs button.active {
+  color: #667eea;
+  border-bottom-color: #667eea;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.stat-card {
+  background: white;
+  border-radius: 12px;
+  padding: 25px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.stat-card h3 {
+  margin: 0 0 15px 0;
+  color: #718096;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.stat-number {
+  font-size: 36px;
+  font-weight: 700;
+  color: #2d3748;
+  margin: 0;
+}
+
+.stat-percent {
+  font-size: 14px;
+  color: #718096;
+  margin: 5px 0 0 0;
+}
+
+.stat-card.approved {
+  border-top: 4px solid #38a169;
+}
+
+.stat-card.rejected {
+  border-top: 4px solid #e53e3e;
+}
+
+.stat-card.pending {
+  border-top: 4px solid #d69e2e;
+}
+
+.stat-card.fraud {
+  border-top: 4px solid #c53030;
+}
+
+.stat-card.audit {
+  border-top: 4px solid #3182ce;
+}
+
+.actions-section {
+  display: flex;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.config-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.config-card {
+  background: white;
+  border-radius: 12px;
+  padding: 25px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.config-card h3 {
+  margin: 0 0 15px 0;
+  color: #2d3748;
+  font-size: 16px;
+}
+
+.config-card input {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #e2e8f0;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.config-card input:focus {
+  outline: none;
+  border-color: #667eea;
+}
+
+.reports-content {
+  background: white;
+  border-radius: 12px;
+  padding: 40px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.btn-primary,
+.btn-secondary {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.btn-primary {
+  background: #667eea;
+  color: white;
+}
+
+.btn-primary:hover {
+  background: #5568d3;
+}
+
+.btn-secondary {
+  background: #e2e8f0;
+  color: #4a5568;
+}
+
+.btn-secondary:hover {
+  background: #cbd5e0;
+}
+
+/* User Management Styles */
+.users-content {
+  background: white;
+  border-radius: 12px;
+  padding: 25px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.users-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.users-header h2 {
+  margin: 0;
+  color: #2d3748;
+}
+
+.create-user-form {
+  background: #f7fafc;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 25px;
+}
+
+.create-user-form h3 {
+  margin: 0 0 20px 0;
+  color: #2d3748;
+}
+
+.create-user-form form {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+}
+
+.create-user-form .form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.create-user-form label {
+  font-weight: 600;
+  color: #4a5568;
+  font-size: 14px;
+}
+
+.create-user-form input,
+.create-user-form select {
+  padding: 10px;
+  border: 2px solid #e2e8f0;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.create-user-form input:focus,
+.create-user-form select:focus {
+  outline: none;
+  border-color: #667eea;
+}
+
+.create-user-form button[type='submit'] {
+  grid-column: 1 / -1;
+  margin-top: 10px;
+}
+
+.users-list {
+  overflow-x: auto;
+}
+
+.users-list table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.users-list th,
+.users-list td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.users-list th {
+  background: #f7fafc;
+  color: #4a5568;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.users-list td {
+  color: #2d3748;
+}
+
+.role-badge,
+.status-badge {
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.role-badge.admin {
+  background: #fed7d7;
+  color: #c53030;
+}
+
+.role-badge.verification_officer {
+  background: #bee3f8;
+  color: #2c5282;
+}
+
+.role-badge.applicant {
+  background: #c6f6d5;
+  color: #22543d;
+}
+
+.status-badge.active {
+  background: #c6f6d5;
+  color: #22543d;
+}
+
+.status-badge.inactive {
+  background: #fed7d7;
+  color: #c53030;
+}
+
+.btn-small {
+  padding: 6px 12px;
+  background: #e2e8f0;
+  border: none;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  color: #4a5568;
+  transition: background 0.2s;
+}
+
+.btn-small:hover {
+  background: #cbd5e0;
+}
